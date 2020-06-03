@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/category.dart';
-import '../screens/categories_meals_screen.dart';
+
+// import '../screens/categories_meals_screen.dart';
 
 class CategoryItem extends StatelessWidget {
   final Category categoria;
@@ -8,11 +9,12 @@ class CategoryItem extends StatelessWidget {
   CategoryItem({@required this.categoria});
 
   _selectCategory(BuildContext context){
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (_){
-        return CategoryMealsScreen(categoria);
-        })
-    );
+    // Navigator.of(context).push(
+    //   MaterialPageRoute(builder: (_){
+    //     return CategoryMealsScreen();
+    //     })
+    // );
+    Navigator.of(context).pushNamed('/cardapio-menu', arguments: categoria);
   }
 
   @override

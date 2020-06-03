@@ -67,8 +67,7 @@ class MealItem extends StatelessWidget {
                   ),
 
                   Row(children: <Widget>[
-                      Icon(Icons.attach_money),
-                      Text(" ${meal.MealCost}")
+                      ...meal.mealCost
                   ])
                 ],
               ),

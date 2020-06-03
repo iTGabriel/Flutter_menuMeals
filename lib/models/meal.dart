@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
-  
+import 'package:flutter/material.dart';
+
   
 enum Complexity {Simple, Medium, Difficult}
 enum Cost {Cheap, Fair, Expensive}
@@ -50,16 +51,14 @@ class Meal {
     }
   } 
 
-  String get MealCost{
+  List<Icon>get mealCost{
     switch (cost){
       case Cost.Cheap:
-        return  "Barato";
+        return [Icon(Icons.attach_money)];
       case Cost.Fair:
-        return  "Justo";
+        return  [Icon(Icons.attach_money), Icon(Icons.attach_money)];
       case Cost.Expensive:
-        return  "Caro";
-      default:
-        return "Desconhecido";
+        return  [Icon(Icons.attach_money), Icon(Icons.attach_money), Icon(Icons.attach_money)];
     }
   }
 

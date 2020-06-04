@@ -51,7 +51,7 @@ class Meal {
     }
   } 
 
-  List<Icon>get mealCost{
+  List<Icon> get mealCost{
     switch (cost){
       case Cost.Cheap:
         return [Icon(Icons.attach_money)];

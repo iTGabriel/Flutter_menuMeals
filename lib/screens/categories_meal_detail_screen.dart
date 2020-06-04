@@ -50,7 +50,7 @@ class MealDetail extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return Container(
                         child: Card(
-                            color: Colors.red[400],
+                            color: Theme.of(context).primaryColor,
                             elevation: 5,
                             child: Padding(
                               padding: const EdgeInsets.all(10),
@@ -69,7 +69,7 @@ class MealDetail extends StatelessWidget {
                       return Column(
                         children: <Widget>[
                           Card(
-                              color: Colors.red[400],
+                              color: Theme.of(context).primaryColor,
                               elevation: 5,
                               child: ListTile(
                                 leading: CircleAvatar(
@@ -83,7 +83,7 @@ class MealDetail extends StatelessWidget {
                                     style:
                                         Theme.of(context).textTheme.headline6),
                               )),
-                          Divider(color: Colors.red[400]),
+                          Divider(color: Theme.of(context).primaryColor),
                         ],
                       );
                     })),

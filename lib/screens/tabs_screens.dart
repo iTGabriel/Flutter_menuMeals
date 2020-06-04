@@ -15,11 +15,11 @@ class TabApp extends StatelessWidget {
           bottom: TabBar(tabs: [
             Tab(
               icon: Icon(Icons.category),
-              text: "Categorias",
+              child: Text("Categorias", style:  TextStyle(fontSize: 20)),
             ),
             Tab(
               icon: Icon(Icons.star),
-              text: "Favoritos",
+              child: Text("Favoritos", style:  TextStyle(fontSize: 20))
             ),
           ]),
         ),

@@ -10,7 +10,8 @@ class TabApp extends StatelessWidget {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Receitas Flutter'),
+          centerTitle: true,
+          title: Text('Receitas Flutter', style: TextStyle(fontSize: 36),),
           bottom: TabBar(tabs: [
             Tab(
               icon: Icon(Icons.category),

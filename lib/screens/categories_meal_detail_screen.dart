@@ -30,6 +30,8 @@ class MealDetail extends StatelessWidget {
                 border: Border.all(color: Colors.grey),
                 borderRadius: BorderRadius.circular(10),
                 ),
+              margin: EdgeInsets.only(bottom: 20),
+              padding: EdgeInsets.only(top: 5, bottom: 5),
               height: 250,
               width: 300,
               child: ListView.builder(

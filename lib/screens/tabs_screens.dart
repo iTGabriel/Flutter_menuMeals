@@ -29,19 +29,23 @@ class _TabAppState extends State<TabApp> {
       ),
       bottomNavigationBar: BottomNavigationBar(
           onTap: _selectedScreen,
-          backgroundColor: Theme.of(context).primaryColor,
           selectedItemColor: Theme.of(context).accentColor,
           unselectedItemColor: Colors.white,
           currentIndex: _screenIndex,
+          type: BottomNavigationBarType.shifting,
           items: [
             BottomNavigationBarItem(
+                backgroundColor: Theme.of(context).primaryColor,
                 icon: Icon(
                   Icons.category,
+                  
                 ),
                 title: Text("Categorias",)),
             BottomNavigationBarItem(
+                backgroundColor: Theme.of(context).primaryColor,
                 icon: Icon(
                   Icons.star,
+                  
                 ),
                 title: Text("Favoritos")),
           ]),

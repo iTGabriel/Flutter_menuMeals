@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.red,
-        accentColor: Colors.amber,
+        accentColor: Colors.black,
         fontFamily: 'DancingScript',
         textTheme: ThemeData.light().textTheme.copyWith(
           headline6: TextStyle(fontFamily: 'Raleway', color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)

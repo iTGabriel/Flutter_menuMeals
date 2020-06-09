@@ -25,7 +25,11 @@ class DrawerMain extends StatelessWidget{
             SizedBox(height: 10),
             
             _drawerOptionSelectScreen(
-              Icon(Icons.restaurant, color: Theme.of(context).primaryColor), "Refeições", (){Navigator.of(context).pushNamed(AppRoutes.HOME);}
+              Icon(Icons.restaurant, color: Theme.of(context).primaryColor), "Refeições", (){Navigator.of(context).pushReplacementNamed(AppRoutes.HOME);}
+            ),
+
+            _drawerOptionSelectScreen(
+              Icon(Icons.settings, color: Theme.of(context).primaryColor), "Configurações", (){Navigator.of(context).pushReplacementNamed(AppRoutes.CONFIGURACOES);}
             ),
 
         ],
